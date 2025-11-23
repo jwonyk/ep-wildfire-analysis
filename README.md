@@ -1,8 +1,8 @@
 # Landsat False Color Analysis of Fire Impact of Palisades-Eaton Region
 
-## Purpose of This Repository
+## About This Repository
 
-This repository contains the work for the homework 4 task 2. The repository focuses on analyzing wildfire impacts using Landsat 8 satellite imagery and a fire perimeter dataset. The project explores the following:
+This repository contains the work for the homework 4 task 2 - . The repository focuses on analyzing wildfire impacts using Landsat 8 satellite imagery and a fire perimeter dataset. The project explores the following:
 
 - Explore and wrangle geospatial fire perimeter data
 - Import and explore NetCDF-based Landsat raster data
@@ -10,6 +10,11 @@ This repository contains the work for the homework 4 task 2. The repository focu
 - Create true and false-color image
 - Visualize fire perimeters
 - Document the workflow
+
+## Final Map Output
+
+This map summarizes the main output of the homework 4, showing the false color Landsat Imagery and the Eaton and Palisades Fire Perimeter.
+
 
 ## Repository Structure
 
