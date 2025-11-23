@@ -2,19 +2,20 @@
 
 ## About This Repository
 
-This repository contains the work for homework 4, tasks 2 - 9. The repository focuses on analyzing wildfire impacts using Landsat 8 satellite imagery and a fire perimeter dataset. The project explores the following:
+This repository contains the work for homework 4, tasks 2. The repository focuses on analyzing wildfire impacts using Landsat 8 satellite imagery and a fire perimeter dataset. The project explores the following:
 
-- Explore and wrangle geospatial fire perimeter data
-- Import and explore NetCDF-based Landsat raster data
-- Restore CRS information for raster dataset
-- Create a true and false-color image
-- Visualize fire perimeters
-- Document the workflow
+-   Explore and wrangle geospatial fire perimeter data
+-   Import and explore NetCDF-based Landsat raster data
+-   Restore CRS information for raster dataset
+-   Create a true and false-color image
+-   Visualize fire perimeters
+-   Document the workflow
 
 ## Final Map Output
 
 This map summarizes the main output of homework 4, showing false-color Landsat Imagery and the Eaton and Palisades Fire Perimeters.
-<img width="989" height="553" alt="output" src="https://github.com/user-attachments/assets/550dadf5-f965-4195-a9ca-231dd2bf956c" />
+
+![](data/output.png){fig-align="center"}
 
 ## Repository Structure
 
@@ -64,14 +65,14 @@ This project is part of the assignment from EDS 220 - Working with Environmental
 
 Data Citation:
 
-[1] EPSG.io. (n.d.). _EPSG:32611 – WGS 84 / UTM Zone 11N_. Available: https://epsg.io/32611#google_vignette. [Accessed: Nov. 15, 2025]
+\[1\] EPSG.io. (n.d.). *EPSG:32611 – WGS 84 / UTM Zone 11N*. Available: https://epsg.io/32611#google_vignette. \[Accessed: Nov. 15, 2025\]
 
-[2] Los Angeles GeoHub / NIFC FIRIS. (2025). _Palisades–Eaton dissolved fire perimeters_ [data file]. Available: https://geohub.lacity.org/maps/ad51845ea5fb4eb483bc2a7c38b2370c/about. [Accessed: Nov. 15, 2025]
+\[2\] Los Angeles GeoHub / NIFC FIRIS. (2025). *Palisades–Eaton dissolved fire perimeters* \[data file\]. Available: https://geohub.lacity.org/maps/ad51845ea5fb4eb483bc2a7c38b2370c/about. \[Accessed: Nov. 15, 2025\]
 
-[3] U.S. Geological Survey. _Landsat Collection 2 Level-2 Surface Reflectance (Microsoft Planetary Computer version)_ [data file]. Available: https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2. [Accessed: Nov. 15, 2025]
+\[3\] U.S. Geological Survey. *Landsat Collection 2 Level-2 Surface Reflectance (Microsoft Planetary Computer version)* \[data file\]. Available: https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2. \[Accessed: Nov. 15, 2025\]
 
-[4] NASA Earth Observatory. (2014, Mar. 4). _Why is that forest red and that cloud blue? How to interpret a false-color satellite image_. Available: https://earthobservatory.nasa.gov/features/FalseColor. [Accessed: Nov. 15, 2025]
+\[4\] NASA Earth Observatory. (2014, Mar. 4). *Why is that forest red and that cloud blue? How to interpret a false-color satellite image*. Available: https://earthobservatory.nasa.gov/features/FalseColor. \[Accessed: Nov. 15, 2025\]
 
-[5] U.S. Geological Survey. (n.d.). _What are the band designations for the Landsat satellites?_ Available: https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites. [Accessed: Nov. 15, 2025]
+\[5\] U.S. Geological Survey. (n.d.). *What are the band designations for the Landsat satellites?* Available: https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites. \[Accessed: Nov. 15, 2025\]
 
-[6] U.S. Geological Survey. (2021, Nov. 12). _Common Landsat band combinations_. Available: https://www.usgs.gov/media/images/common-landsat-band-combinations. [Accessed: Nov. 15, 2025]
+\[6\] U.S. Geological Survey. (2021, Nov. 12). *Common Landsat band combinations*. Available: https://www.usgs.gov/media/images/common-landsat-band-combinations. \[Accessed: Nov. 15, 2025\]
