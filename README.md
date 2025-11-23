@@ -15,7 +15,7 @@ This repository contains the work for homework 4, tasks 2. The repository focuse
 
 This map summarizes the main output of homework 4, showing false-color Landsat Imagery and the Eaton and Palisades Fire Perimeters.
 
-![](data/output.png){fig-align="center"}
+<img width="990" height="553" alt="output" src="https://github.com/user-attachments/assets/e20ae91e-b1bc-46e6-b1d3-4dee75a123d3" />
 
 ## Repository Structure
 
