@@ -1,27 +1,22 @@
-# Landsat False Color Analysis of Fire Impact of Palisades-Eaton Region
+# Eaton & Palisades Wildfire Analysis
+### Landsat False-Color Imagery + Environmental Justice Index Community Vulnerability Assessment
 
 ## About This Repository
 
-This repository contains the work for homework 4, tasks 2. The repository focuses on analyzing wildfire impacts using Landsat 8 satellite imagery and a fire perimeter dataset. The project explores the following:
+This repository contains the analysis and supporting materials for the wildfire-impact project examining the _2025 Eaton and Palisades Fires_ in Los Angeles County. The project integrates:
 
--   Explore and wrangle geospatial fire perimeter data
--   Import and explore NetCDF-based Landsat raster data
--   Restore CRS information for raster dataset
--   Create a true and false-color image
--   Visualize fire perimeters
--   Document the workflow
+- _Landsat 8 satellite imagery_ (true-color and false-color composites)
+- _Fire perimeter data_ from NIFC FIRIS
+- _2024 Environmental Justice Index_ census-tract–level social vulnerability indicators
 
-## Final Map Output
-
-This map summarizes the main output of homework 4, showing false-color Landsat Imagery and the Eaton and Palisades Fire Perimeters.
-
-<img width="990" height="553" alt="output" src="https://github.com/user-attachments/assets/e20ae91e-b1bc-46e6-b1d3-4dee75a123d3" />
+The goal is to understand both the physical burn impacts and the social dimensions of the communities affected by each fire.
 
 ## Repository Structure
 
 ``` bash
 eds220-hwk4
-├── hwk4-task2-false-color-kim.ipynb
+├── landsat-false-color.ipynb
+├── eji-social-vulnerability.ipynb
 ├── LICENSE
 ├── .gitignore
 └── README.md
@@ -40,6 +35,8 @@ This project uses publicly available spatial and remote sensing datasets stored 
 │   │   ├── Palisades_Perimeter_20250121.csv
 │   │   ├── Palisades_Perimeter_20250121.geojson
 │   │   └── Palisades_Perimeter_20250121.kml
+│   ├── EJI_2024_California
+│   │   ├── EJI_2024_California.gdb
 │   └── landsat8-2025-02-23-palisades-eaton.nc
 ```
 
@@ -53,9 +50,12 @@ The fire perimeter dataset contains dissolved burn boundaries for the Eaton and 
 
 The Landsat used in this analysis is a Landsat 8 Collection Level-2 Surface Reflectance product accessed through the Microsoft Planetary Computer Data Catalogue. The dataset includes multiple spectral bands stored in a NetCDF structure, CRS information, coordinate dimensions, and metadata. The spectral bands will assist in creating true and false-color composite images for post-fire assessment.
 
+#### Environmental Justice Index Community Vulnerability Analysis
+This analysis uses the 2024 Environmental Justice Index (EJI) to identify and compare census tracts affected by the Eaton and Palisades fires, using spatial joins and clipping to the fire boundaries. After aligning datasets to a shared CRS, the intersecting tracts are examined using four key vulnerability indicators, such as age, vehicle access, poverty, and overall EJI score, to highlight differences in social and demographic vulnerability between the two burn areas.
+
 ## Authorship
 
-This project is part of the assignment from EDS 220 - Working with Environmental Datasets.
+This repository was created for the course EDS 220 – Working with Environmental Datasets, UC Santa Barbara.
 
 -   The project author: **Jay Kim**
 -   Instructor: **Carmen Galaz García**
@@ -65,14 +65,8 @@ This project is part of the assignment from EDS 220 - Working with Environmental
 
 Data Citation:
 
-\[1\] EPSG.io. (n.d.). *EPSG:32611 – WGS 84 / UTM Zone 11N*. Available: https://epsg.io/32611#google_vignette. \[Accessed: Nov. 15, 2025\]
+\[1\] Los Angeles GeoHub / NIFC FIRIS. (2025). *Palisades–Eaton dissolved fire perimeters* \[data file\]. Available: https://geohub.lacity.org/maps/ad51845ea5fb4eb483bc2a7c38b2370c/about. \[Accessed: Nov. 15, 2025\]
 
-\[2\] Los Angeles GeoHub / NIFC FIRIS. (2025). *Palisades–Eaton dissolved fire perimeters* \[data file\]. Available: https://geohub.lacity.org/maps/ad51845ea5fb4eb483bc2a7c38b2370c/about. \[Accessed: Nov. 15, 2025\]
+\[2\] U.S. Geological Survey. *Landsat Collection 2 Level-2 Surface Reflectance (Microsoft Planetary Computer version)* \[data file\]. Available: https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2. \[Accessed: Nov. 15, 2025\]
 
-\[3\] U.S. Geological Survey. *Landsat Collection 2 Level-2 Surface Reflectance (Microsoft Planetary Computer version)* \[data file\]. Available: https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2. \[Accessed: Nov. 15, 2025\]
-
-\[4\] NASA Earth Observatory. (2014, Mar. 4). *Why is that forest red and that cloud blue? How to interpret a false-color satellite image*. Available: https://earthobservatory.nasa.gov/features/FalseColor. \[Accessed: Nov. 15, 2025\]
-
-\[5\] U.S. Geological Survey. (n.d.). *What are the band designations for the Landsat satellites?* Available: https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites. \[Accessed: Nov. 15, 2025\]
-
-\[6\] U.S. Geological Survey. (2021, Nov. 12). *Common Landsat band combinations*. Available: https://www.usgs.gov/media/images/common-landsat-band-combinations. \[Accessed: Nov. 15, 2025\]
+\[3\] U.S. Department of Health and Human Services. (2024). *Environmental Justice Index (EJI), 2024 – California Census Tract Data* \[data file\]. Available: https://www.atsdr.cdc.gov/place-health/php/eji/eji-data-download.html. \[Accessed: Nov. 21, 2025\]
