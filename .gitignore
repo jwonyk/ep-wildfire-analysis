@@ -1,6 +1,9 @@
 # Data directory
 data/
 
+# Output directory
+output/
+
 # DS Store
 .DS_Store
 

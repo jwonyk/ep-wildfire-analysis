@@ -1,20 +1,27 @@
 # Eaton & Palisades Wildfire Analysis
+
 ### Landsat False-Color Imagery + Environmental Justice Index Community Vulnerability Assessment
 
 ## About This Repository
 
-This repository contains the analysis and supporting materials for the wildfire-impact project examining the _2025 Eaton and Palisades Fires_ in Los Angeles County. The project integrates:
+This repository contains the analysis and supporting materials for the wildfire-impact project examining the *2025 Eaton and Palisades Fires* in Los Angeles County. The project integrates:
 
-- _Landsat 8 satellite imagery_ (true-color and false-color composites)
-- _Fire perimeter data_ from NIFC FIRIS
-- _2024 Environmental Justice Index_ census-tract–level social vulnerability indicators
+-   *Landsat 8 satellite imagery* (true-color and false-color composites)
+-   *Fire perimeter data* from NIFC FIRIS
+-   *2024 Environmental Justice Index* census-tract–level social vulnerability indicators
 
 The goal is to understand both the physical burn impacts and the social dimensions of the communities affected by each fire.
+
+## Final Map Output
+
+This map summarizes the main output of homework 4, showing false-color Landsat Imagery and the Eaton and Palisades Fire Perimeters.
+
+**VERY IMPORTANT!!! REPLACE THIS WITH PICTURE!!!**
 
 ## Repository Structure
 
 ``` bash
-eds220-hwk4
+ep-wildfire-analysis
 ├── landsat-false-color.ipynb
 ├── eji-social-vulnerability.ipynb
 ├── LICENSE
@@ -48,10 +55,11 @@ The fire perimeter dataset contains dissolved burn boundaries for the Eaton and 
 
 #### Landsat NetCDF Dataset
 
-The Landsat used in this analysis is a Landsat 8 Collection Level-2 Surface Reflectance product accessed through the Microsoft Planetary Computer Data Catalogue. The dataset includes multiple spectral bands stored in a NetCDF structure, CRS information, coordinate dimensions, and metadata. The spectral bands will assist in creating true and false-color composite images for post-fire assessment.
+The Landsat used in this analysis is a Landsat 8 Collection Level-2 Surface Reflectance product accessed through the [Microsoft Planetary Computer Data Catalogue](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2). The dataset includes multiple spectral bands stored in a NetCDF structure, CRS information, coordinate dimensions, and metadata. The spectral bands will assist in creating true and false-color composite images for post-fire assessment.
 
 #### Environmental Justice Index Community Vulnerability Analysis
-This analysis uses the 2024 Environmental Justice Index (EJI) to identify and compare census tracts affected by the Eaton and Palisades fires, using spatial joins and clipping to the fire boundaries. After aligning datasets to a shared CRS, the intersecting tracts are examined using four key vulnerability indicators, such as age, vehicle access, poverty, and overall EJI score, to highlight differences in social and demographic vulnerability between the two burn areas.
+
+This analysis uses the 2024 [Environmental Justice Index](https://www.atsdr.cdc.gov/place-health/php/eji/eji-explorer.html) (EJI) to identify and compare census tracts affected by the Eaton and Palisades fires, using spatial joins and clipping to the fire boundaries. After aligning datasets to a shared CRS, the intersecting tracts are examined using four key vulnerability indicators, such as age, vehicle access, poverty, and overall EJI score, to highlight differences in social and demographic vulnerability between the two burn areas.
 
 ## Authorship
 
