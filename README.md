@@ -14,9 +14,9 @@ The goal is to understand both the physical burn impacts and the social dimensio
 
 ## Final Map Output
 
-This map summarizes the main output of homework 4, showing false-color Landsat Imagery and the Eaton and Palisades Fire Perimeters.
+This map summarizes the main output of homework 4, showing false-color Landsat Imagery and the fire perimeters for the Eaton and Palisades Fires.
 
-**VERY IMPORTANT!!! REPLACE THIS WITH PICTURE!!!**
+<img width="990" height="543" alt="final-map-false-color-landsat" src="https://github.com/user-attachments/assets/81ecc893-1e10-40ec-a314-8f2d21f50c20" />
 
 ## Repository Structure
 
